@@ -7,7 +7,7 @@ function Album(albumName, cover, artist, year) {
 }
 
 Album.prototype.galleryItem = function() {
-  return '<div class="item"> <h4>' + this.albumName + '</h4>' + '<img src="' + this.cover + '" alt="" />'+ '<p>' + this.artist + '</p><p>' + this.year + '</p></div>';
+  return '<div class="item"> <h4>' + this.albumName + '</h4>' + '<img src="' + this.cover + '" alt="" />'+ '<p>' + this.artist + '</p><p>' + this.year + '</p>' + '<div class="rating"><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div></div>';
 }
 // FRONT END
 $(document).ready(function() {
@@ -29,6 +29,8 @@ $(document).ready(function() {
     console.log(newAlbum);
 
     $('#gallery').append(newAlbum.galleryItem());
+
+
 
   });
 });

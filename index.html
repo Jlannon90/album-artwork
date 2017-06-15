@@ -5,6 +5,8 @@
     <script src="js/jquery.js"></script>
     <script src="js/scripts.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Fondamento|Montserrat" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Album Artwork</title>
   </head>
   <body>
@@ -17,19 +19,19 @@
       <form>
         <div class="form-group">
           <label for="album-name">Album Name</label>
-          <input id="album-name" class="form-control" type="text">
+          <input id="album-name" class="form-control" type="text" required="">
         </div>
         <div class="form-group">
           <label for="cover">Album Art</label>
-          <input id="cover" class="form-control" type="text">
+          <input id="cover" class="form-control" type="text" required="">
         </div>
         <div class="form-group">
           <label for="artist">Artist Name</label>
-          <input id="artist" class="form-control" type="text">
+          <input id="artist" class="form-control" type="text" required="">
         </div>
         <div class="form-group">
           <label for="year">Year Release</label>
-          <input id="year" class="form-control" type="text">
+          <input id="year" class="form-control" type="text" required="">
         </div>
         <button type="submit" class="btn">Add!</button>
       </form>
@@ -38,7 +40,30 @@
     <div class="gallery-section">
       <h3>Gallery</h3>
       <div id="gallery">
-
+        <div class="item">
+          <h4>The Essential Whitney</h4>
+          <img src="img/whitney.jpg" alt="Whitney Houston" />
+          <p>Whitney Houston</p>
+          <p>2010</p>
+          <div class="rating"><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+          </div>
+        </div>
+        <div class="item">
+          <h4>Dark Side of the Moon</h4>
+          <img src="img/dark.png" alt="Dark Side of the Moon" />
+          <p>Pink Floyd</p>
+          <p>1973</p>
+          <div class="rating"><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+          </div>
+        </div>
+        <div class="item">
+          <h4>Yellow Submarine</h4>
+          <img src="img/beatles.jpg" alt="Yellow Submarine" />
+          <p>The Beatles</p>
+          <p>1968</p>
+          <div class="rating"><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+          </div>
+        </div>
       </div>
     </div>
   </body>
